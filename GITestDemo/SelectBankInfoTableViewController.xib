@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectBankInfoTableViewController">
+            <connections>
+                <outlet property="searchBar" destination="bKO-kg-Ixd" id="E4Y-SO-2BA"/>
+                <outlet property="tableView" destination="xko-4o-eml" id="ugo-TU-Z5T"/>
+                <outlet property="view" destination="RQ8-08-ycz" id="Rej-gU-lQ7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RQ8-08-ycz">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="bKO-kg-Ixd">
+                    <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="MmM-eW-n2T"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xko-4o-eml">
+                    <rect key="frame" x="0.0" y="108" width="320" height="460"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CEJ-yz-u27"/>
+                        <outlet property="delegate" destination="-1" id="76A-bu-7xm"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xko-4o-eml" secondAttribute="trailing" id="1Xf-dB-FUV"/>
+                <constraint firstAttribute="bottom" secondItem="xko-4o-eml" secondAttribute="bottom" id="1mo-0v-Ty5"/>
+                <constraint firstItem="bKO-kg-Ixd" firstAttribute="top" secondItem="RQ8-08-ycz" secondAttribute="top" constant="64" id="5j7-aT-HMb"/>
+                <constraint firstAttribute="trailing" secondItem="bKO-kg-Ixd" secondAttribute="trailing" id="U5i-xL-Mvw"/>
+                <constraint firstItem="bKO-kg-Ixd" firstAttribute="leading" secondItem="RQ8-08-ycz" secondAttribute="leading" id="XOx-ak-7XJ"/>
+                <constraint firstItem="xko-4o-eml" firstAttribute="top" secondItem="bKO-kg-Ixd" secondAttribute="bottom" id="XsR-St-tVi"/>
+                <constraint firstItem="xko-4o-eml" firstAttribute="leading" secondItem="RQ8-08-ycz" secondAttribute="leading" id="sTX-46-Uyk"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="67" y="171"/>
+        </view>
+    </objects>
+</document>
